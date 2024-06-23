@@ -2,112 +2,72 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="w-screen text-white px-[128px] bg-[#151515]">
+      <section className="h-screen flex justify-left items-center overflow-hidden">
+        <div className="w-full pt-[24px] absolute top-0 left-0 z-10 px-[128px] flex items-center justify-between">
+          <p className="text-[32px] text-white font-semibold">TaxiBilen</p>
+          <button className="bg-white text-black px-[32px] py-[8px] rounded-full font-medium">
+            Registrera Dig
+          </button>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <Image
+            src="/heroImg.jpg"
+            alt="Hero Image"
+            layout="fill"
+            objectFit="cover"
+            className="object-top"
+          />
+        </div>
+        <div className="relative h-2/4 flex z-10 flex flex-col justify-start items-start text-left">
+          <p className="text-[96px] font-bold text-white leading-10">
+            Åk vart du vill
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p className="text-[96px] font-bold text-white">
+            med <span className="text-[#FFE500]">TaxiBilen</span>
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
+          <p className="text-white text-[48px]">Kontakta oss direkt eller</p>
+          <p className="text-white text-[48px]">ladda ner appen</p>
+        </div>
+      </section>
+      <section className="min-h-screen pt-[64px] relative px-[256px]">
+        <section className="w-full text-center flex flex-col justify-center items-center">
+          <h1 className="text-[64px] font-semibold">
+            Mer än bara en <span className="text-[#FFE500]">taxi</span>
+          </h1>
+          <p className="text-[32px] leading-10">
+            Vi kör även bud med plats för en låg{" "}
+            <span className="text-[#FFE500]">lastpall</span>, ordentligt{" "}
+            <span className="text-[#FFE500]">takräcke</span>
+            för långa saker och möjlighet att köra{" "}
+            <span className="text-[#FFE500]">släp</span> med t.ex. båt
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        </section>
+        <section className="relative flex flex-row justify-between items-center gap-[64px] text-[32px] pt-[128px]">
+          <div className="w-1/2 flex flex-col gap-[16px]">
+            <p className="text-[48px] leading-[50px] font-semibold">
+              Lokal <span className="text-[#FFE500]">Taxi</span> for
+              lokalbefolkningen
+            </p>
+            <p>
+              Vårt <span className="text-[#FFE500]">mål</span> är att finnas här
+              för lokalbefolkningen{" "}
+              <span className="text-[#FFE500]">året om. Fasta priser</span> och
+              enkelt upplägg
+            </p>
+          </div>
+          <div className="relative w-[50%] aspect-square">
+            <Image
+              className="rounded-[40px]"
+              src="/road.png"
+              alt="Image"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        </section>
+      </section>
+      <section className="h-screen"></section>
     </main>
   );
 }
