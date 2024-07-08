@@ -11,13 +11,13 @@ export default function Home() {
           </button>
         </div>
         <div className="absolute inset-0 z-0 overflow-hidden">
-          <Image
+          {/* <Image
             src="/heroImg.jpg"
             alt="Hero Image"
             layout="fill"
             objectFit="cover"
             className="object-top"
-          />
+          /> */}
         </div>
         <div className="relative h-2/4 flex z-10 flex flex-col justify-start items-start text-left">
           <p className="text-[96px] font-bold text-white leading-10">
