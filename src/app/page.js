@@ -26,8 +26,10 @@ export default function Home() {
           <p className="text-[96px] font-bold text-white">
             med <span className="text-[#FFE500]">TaxiBilen</span>
           </p>
-          <p className="text-white text-[48px]">Kontakta oss direkt eller</p>
-          <p className="text-white text-[48px]">ladda ner appen</p>
+          <p className="text-white text-[48px]">
+            Kontakta oss direkt och förboka
+          </p>
+          <p className="text-white text-[48px]">din taxi i god tid</p>
         </div>
       </section>
       <section className="min-h-screen pt-[64px] relative px-[256px]">
