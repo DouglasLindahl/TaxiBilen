@@ -6,9 +6,9 @@ export default function Home() {
       <section className="h-screen flex justify-left items-center overflow-hidden">
         <div className="w-full pt-[24px] absolute top-0 left-0 z-10 px-[128px] flex items-center justify-between">
           <p className="text-[32px] text-white font-semibold">TaxiBilen</p>
-          <button className="bg-white text-black px-[32px] py-[8px] rounded-full font-medium">
+          {/* <button className="bg-white text-black px-[32px] py-[8px] rounded-full font-medium">
             Registrera Dig
-          </button>
+          </button> */}
         </div>
         <div className="absolute inset-0 z-0 overflow-hidden">
           {/* <Image
