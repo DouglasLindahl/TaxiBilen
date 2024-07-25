@@ -74,7 +74,7 @@ export default function Home() {
           <div className="relative w-[70%] 2xl:w-[40%] aspect-square">
             <Image
               className="rounded-[40px]"
-              src="/taxiBilen.png"
+              src="/taxibilen.png"
               alt="Image"
               layout="fill"
               objectFit="cover"
