@@ -48,7 +48,7 @@ export default function Home() {
           <p className="text-[22px] 2xl:text-[28px] leading-10">
             Vi kör även bud med plats för en låg{" "}
             <span className="text-[#FFE500]">lastpall</span>, ordentligt{" "}
-            <span className="text-[#FFE500]">takräcke</span> för långa saker och
+            <span className="text-[#FFE500]">takräcke</span> för lång last och
             möjlighet att köra <span className="text-[#FFE500]">släp</span> med
             t.ex. båt
           </p>
