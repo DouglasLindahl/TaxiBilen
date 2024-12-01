@@ -5,28 +5,18 @@ export default function Home() {
     <main className="relative text-white px-[32px] 2xl:px-[128px] bg-[#101010]">
       <div className="absolute inset-0 z-0 h-[80vh]">
         <Image
-          src="/road2.jfif"
+          src="/road3.png"
           alt="Image"
           layout="fill"
           objectFit="cover"
           style={{ transform: "scaleX(-1)", objectPosition: "right" }}
         />
-        {/* <div
-          style={{
-            position: "absolute",
-            inset: "0",
-            backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust the rgba value for darkness
-            zIndex: 10,
-          }}
-        ></div> */}
+
         <div className="absolute w-full h-1/5 bottom-0 bg-gradient-to-t from-[#101010]"></div>
       </div>
       <section className="h-[80vh] flex justify-left items-center overflow-hidden">
         <div className="w-full pt-[24px] absolute top-0 left-0 z-10 flex items-center justify-between px-[32px] 2xl:px-[128px]">
           <p className="text-[22px] text-white font-semibold">TaxiBilen</p>
-          {/* <button className="bg-white text-black px-[16px] py-[4px] rounded-full font-medium">
-            Registrera Dig
-          </button> */}
         </div>
 
         <div className="relative h-2/4 flex z-10 flex flex-col justify-start items-start text-left gap-8 drop-shadow-2xl">
@@ -38,6 +28,20 @@ export default function Home() {
             Res säkert och bekvämt. Kontakta oss direkt och förboka din taxi i
             god tid.
           </p>
+          <div className="px-[22px] py-[12px] bg-white/30 rounded-xl shadow-md">
+            <a
+              href="tel:0760072676"
+              className="block text-lg font-bold text-white hover:text-[#FFE500]"
+            >
+              Tel: <span className="font-medium">076-007 26 76</span>
+            </a>
+            <a
+              href="mailto:hej@taxibilen.se"
+              className="block text-lg font-bold text-white hover:text-[#FFE500]"
+            >
+              E-post: <span className="font-medium">hej@taxibilen.se</span>
+            </a>
+          </div>
         </div>
       </section>
       <section className="min-h-screen pt-[64px] relative px-[32px] 2xl:px-[228px] pb-[256px]">
